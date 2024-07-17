@@ -1,0 +1,15 @@
+{
+  "name": "intelligent-dispatch-backend",
+  "version": "1.0.0",
+  "description": "Backend for Intelligent Scheduling and Dispatch application",
+  "main": "app.py",
+  "scripts": {
+    "start": "python app.py",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^7.0.0"
+  }
+}

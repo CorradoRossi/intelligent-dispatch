@@ -1,0 +1,35 @@
+Intelligent Scheduling and Dispatch MVP - High-Level Architecture
+
++-------------------+      +-------------------+      +-------------------+
+|                   |      |                   |      |                   |
+|  React Frontend   | <--> |   Flask Backend   | <--> |  PostgreSQL DB    |
+|                   |      |                   |      |                   |
++-------------------+      +-------------------+      +-------------------+
+
+1. React Frontend:
+   - App.js: Main component and routing
+   - Dashboard.js: Displays daily assignments
+   - ServiceRequestForm.js: Creates new service requests
+   - TechnicianSchedule.js: Shows technician schedules
+
+2. Flask Backend:
+   - app.py: Contains API endpoints and basic matching algorithm
+   - Models: Customer, Technician, ServiceRequest, TechnicianAvailability, Assignment
+
+3. PostgreSQL Database:
+   - Tables: customers, technicians, service_requests, technician_availability, assignments
+
+Data Flow:
+1. User interacts with React components
+2. React components make API calls to Flask backend
+3. Flask backend processes requests, interacts with the database, and returns responses
+4. React components update the UI based on the received data
+
+Key Features:
+- Create and retrieve service requests
+- Update technician availability
+- Assign technicians to service requests based on availability
+- Display daily assignments and technician schedules
+
+Note: This MVP focuses on core functionality and lacks advanced features like
+complex scheduling algorithms, user authentication, or real-time updates.
